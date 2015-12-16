@@ -1,15 +1,17 @@
-# Open in CMD
+# Open SHELL
 
 ![snapshot](https://raw.githubusercontent.com/lmatt-bit/atom_open_in_cmd/master/screenshot.gif)
 
-Thanks to ziyasal's [open-conemu-here](https://github.com/ziyasal/atom-open-conemu-here), I can create "open_in_cmd" package. With "open_in_cmd", User can open a CMD in Atom directly from tree-view & editor.  
 
+Adds ability to open shell directly from tree-view and editor (works only with powershell for now).
+
+This is fork of lmatt-bit's [atom_open_in_cmd](https://github.com/ziyasal/atom-open-conemu-here), originally created by ziyasal ([open-conemu-here](https://github.com/ziyasal/atom-open-conemu-here)).
+
+## Installation
 To install package from command line:
 ```shell
-apm install open_in_cmd
+apm install open_shell
 ```
 
-Note: This package is only enabled on Windows, that's why "CMD" is used.
-
-##License
-MIT License
+## License
+[MIT License](https://github.com/oczkers/atom-open-shell/blob/master/LICENSE)

@@ -1,8 +1,8 @@
 {
-  "name": "open_in_cmd",
+  "name": "open_shell",
   "main": "./lib/code",
-  "version": "0.6.0",
-  "description": "Allow user to open a CMD from current directory in Atom tree-view or editor.",
+  "version": "0.1.0",
+  "description": "Allow user to open SHELL from current directory in Atom tree-view or editor.",
   "keywords": [
     "cmd",
     "command",
@@ -11,7 +11,7 @@
   "activationCommands": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/lmatt-bit/atom_open_in_cmd"
+    "url": "https://github.com/oczkers/atom_open_shell"
   },
   "license": "MIT",
   "engines": {
