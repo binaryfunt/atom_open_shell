@@ -2,14 +2,14 @@
 
   '.tree-view': [
     {
-      label: 'Open folder in shell',
+      label: 'Open folder in SHELL',
       command: 'open-shell:open_path'
     }
   ]
 
   'atom-text-editor': [
     {
-      label: 'Open file folder in shell',
+      label: 'Open file folder in SHELL',
       command: 'open-shell:open'
     }
   ]

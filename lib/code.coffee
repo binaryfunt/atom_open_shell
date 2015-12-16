@@ -20,4 +20,8 @@ module.exports =
     else
       dir_path = select_file
 
-    exec "start cmd /k \"cd \"#{dir_path}\"\""
+    # exec "start cmd /k \"cd \"#{dir_path}\"\""
+    # TODO: maximized as an option
+    # TODO: detect os
+    # TODO: ability to choose cmd/powershell/conemu etc.
+    exec "start powershell -noexit -WindowStyle Maximized -NoLogo -ExecutionPolicy ByPass -command \"cd \"#{dir_path}\"\""
