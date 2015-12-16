@@ -14,4 +14,4 @@ apm install open_shell
 ```
 
 ## License
-[MIT License](https://github.com/oczkers/atom-open-shell/blob/master/LICENSE)
+[MIT License](https://github.com/oczkers/atom_open_shell/blob/master/LICENSE)
