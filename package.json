@@ -1,24 +1,24 @@
 {
-  "name": "open_shell",
-  "main": "./lib/code",
-  "version": "0.1.0",
-  "description": "Allow user to open a shell window from current directory in Atom tree-view or command palette.",
-  "keywords": [
-    "cmd",
-    "powershell",
-    "command",
-    "windows"
-  ],
-  "activationCommands": {
+    "name": "open_shell",
+    "main": "./lib/code",
+    "version": "0.1.0",
+    "description": "Allow user to open a shell window from current directory in Atom tree-view or command palette.",
+    "keywords": [
+        "cmd",
+        "powershell",
+        "command",
+        "windows"
+    ],
+    "activationCommands": {
        "atom-text-editor": ["open-shell:open", "open-shell:open_path"]
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/binaryfunt/atom_open_shell"
-  },
-  "license": "MIT",
-  "engines": {
-    "atom": ">=1.0.0 <2.0.0"
-  },
-  "dependencies": {}
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/binaryfunt/atom_open_shell"
+    },
+    "license": "MIT",
+    "engines": {
+        "atom": ">=1.0.0 <2.0.0"
+    },
+    "dependencies": {}
 }
