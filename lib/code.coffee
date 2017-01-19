@@ -4,6 +4,17 @@ path = require('path')
 fs = require('fs')
 
 module.exports =
+    config:
+        defaultShell:
+            title: 'Choose the default shell'
+            type: 'string'
+            default: 'Powershell'
+            enum: ['Powershell', 'cmd', 'Git shell']
+        # maximize:
+        #     title: 'Maximize the shell window on opening'
+        #     type: 'boolean'
+        #     default: false
+        
     activate: ->
         atom.commands.add 'atom-workspace', 'open-shell:open', => @open_shell()
         atom.commands.add '.tree-view .selected', 'open-shell:open_path' : (event) => @open_shell(event.currentTarget)
@@ -20,8 +31,13 @@ module.exports =
         else
             dir_path = select_file
 
-        # exec "start cmd /k \"cd \"#{dir_path}\"\""
         # TODO: maximized as an option
         # TODO: detect os
-        # TODO: ability to choose cmd/powershell/conemu etc.
-        exec "start powershell -noexit -WindowStyle Maximized -NoLogo -ExecutionPolicy ByPass -command \"cd \"#{dir_path}\"\""
+
+        if atom.config.get('open_shell.defaultShell') is 'Powershell'
+            exec "start powershell -noexit -executionpolicy bypass -command \"cd \"#{dir_path}\"\""
+        else if atom.config.get('open_shell.defaultShell') is 'cmd'
+            exec "start cmd /k \"cd \"#{dir_path}\"\""
+        else if atom.config.get('open_shell.defaultShell') is 'Git shell'
+            exec "\"%LOCALAPPDATA%\\GitHub\\GitHub.appref-ms\" --open-shell -command \"cd \"#{dir_path}\"\""
+            # FIXME: doesn't cd
