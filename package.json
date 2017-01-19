@@ -9,7 +9,9 @@
     "command",
     "windows"
   ],
-  "activationCommands": [],
+  "activationCommands": {
+       "atom-text-editor": ["open-shell:open", "open-shell:open_path"]
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/binaryfunt/atom_open_shell"
